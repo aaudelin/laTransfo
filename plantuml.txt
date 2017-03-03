@@ -1,0 +1,74 @@
+@startuml
+
+title la-transfo
+
+
+class Utilisateur {
+  +id
+  +pseudo
+  +email
+  +dateCreation
+  +void addUtilisateur()
+  +void suspendreUtilisateur()
+}
+class Admin
+class Client
+
+class Topic {
+  +id
+  +titre
+  +void addTopic()
+  +void AjouterEquipe()
+}
+
+class Question {
+  +id
+  +titre
+  +auteur
+  +dateCreation
+  +duree
+  +void addQuestion()
+  +void deleteQuestion()
+  +void getQuestion()
+}
+
+class Expression {
+  +id
+}
+
+class Commentaire {
+  +id
+}
+
+class Vote {
+  +id
+  +vote
+  +dateCreation
+  +void Note(valeur)
+}
+
+class Proposition {
+  +id
+  +texte
+  +image/dessin
+  +auteur
+  +dateCreation
+  +void addReponse()
+  +void deleteReponse()
+  +void getReponse()
+}
+
+
+Topic *-right- "0.*" Question
+Topic "0..*" -down- "0..*" Utilisateur
+Question *-right- "0.*" Proposition
+Question "0..*" -down- "1..1" Utilisateur
+Proposition *-right- "0.*" Expression
+Proposition "0..*" -down- "1..1" Utilisateur
+Expression <|-down- Vote
+Expression <|-down- Commentaire
+
+Utilisateur <|-down- Admin
+Utilisateur <|-down- Client
+
+@enduml
