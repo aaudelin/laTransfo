@@ -34,11 +34,18 @@
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
     "cordova-plugin-statusbar",
-    "cordova-plugin-device",
     "cordova-plugin-console",
+    "cordova-plugin-device",
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
   ],
-  "cordovaPlatforms": [],
-  "description": "laTransfo: An Ionic project"
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
+  ],
+  "description": "laTransfo-App: An Ionic project"
 }
