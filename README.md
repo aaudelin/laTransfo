@@ -14,8 +14,6 @@ Une plateforme qui permet de dynamiser la réflexion.
 3. Lancer la commande : *ionic serve*
 
 ### API
-Notes :
- - Exemple : adresse = localhost:1337, objet = utilisateur et identifiant = 1
 
 1. Créer un objet : POST (http://adresse/objet)
 2. Consulter tous les objets : GET (http://adresse/objet)
