@@ -1,0 +1,117 @@
+page-pageHome {
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+
+    h1              { font-size: 2em; margin: .67em 0 }
+    h2              { font-size: 1.5em; margin: .75em 0 }
+    h3              { font-size: 1.17em; margin: .83em 0 }
+    h4, p,
+    blockquote, ul,
+    fieldset, form,
+    ol, dl, dir,
+    menu            { /*margin: 1.12em 0*/ }
+    h5              { font-size: .83em; margin: 1.5em 0 }
+    h6              { font-size: .75em; margin: 1.67em 0 }
+    h1, h2, h3, h4,
+    h5, h6, b,
+    strong          { font-weight: bolder }
+    
+    h4 {
+        text-align: center;
+        border: 1px solid white;
+    }
+
+    img {
+        height: 90px; 
+        width: 90px;    
+        margin: 0 5px 0 5px;
+        padding: 5px;
+    }
+
+    section.item { 
+        width:17em; 
+        float:left; 
+        margin: .75em; 
+        padding:0;
+        text-align:justify;
+        background-color:#EEE; 
+        color:black;
+        cursor: pointer;
+    }
+
+    section.item p { 
+        padding: 0 .7em; 
+        text-align: center;
+        background-color: #c0392b;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    section.item:nth-of-type(even) { 
+        background-color:#e74c3c; 
+        color:white; 
+        margin-bottom: 10px;
+    }
+    section.item:nth-of-type(odd) { 
+        background-color:#e74c3c; 
+        color:white; 
+        margin-bottom: 10px;
+    }
+
+    article > section {
+        background-color:#EEE; 
+        color:black;
+        margin : 0 2em 0 10em;    
+        padding: 1em 1em 1em 2em;
+    }
+
+    .clear {
+        clear: both;
+    }
+    
+    footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      background-color: #efefef;
+    }
+    
+    @media handheld, screen and (max-width:50em) {
+        header, nav, footer{ width:auto; }
+        section.item { 
+         margin : 0 ;
+         padding: 0 ;
+         width :auto;
+         height:auto;
+         float:none;
+        }
+    }
+}
